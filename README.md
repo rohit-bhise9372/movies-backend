@@ -58,10 +58,9 @@ movies-app/
     │   ├── components/
     │   │   ├── AllMovies.jsx         # Displays all movie titles
     │   │   ├── MovieByTitle.jsx      # Displays movie details by title
-    │   │   ├── MoviesByDirector.jsx  # Displays movies by director
-    │   │   └── MoviesByGenre.jsx     # Displays movies by genre
     │   ├── useFetch.js               # Custom hook for data fetching
     │   └── App.jsx                   # Combines all components
+    ├── .gitignore
     ├── package.json
     └── vite.config.js
 ```
