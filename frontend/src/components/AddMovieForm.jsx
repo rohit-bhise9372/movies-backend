@@ -18,16 +18,20 @@ const AddMovieForm = () => {
 
     const handleChange = (e) => {
         const { name, value } = e.target;
+
         setFormData((prevState) => ({
             ...prevState,
             [name]:
-                name === "releaseYear" || name === "rating" ? parseInt(value) : value,
+                name === "releaseYear" || name === "rating"
+                    ? parseInt(value)
+                    : value,
         }));
     };
 
     return (
         <div>
             <h2>Add New Movie</h2>
+
             <form>
                 <label>Title:</label>
                 <br />
@@ -37,8 +41,10 @@ const AddMovieForm = () => {
                     value={formData.title}
                     onChange={handleChange}
                 />
+
                 <br />
                 <br />
+
                 <label>Release Year:</label>
                 <br />
                 <input
@@ -47,8 +53,10 @@ const AddMovieForm = () => {
                     value={formData.releaseYear}
                     onChange={handleChange}
                 />
+
                 <br />
                 <br />
+
                 <label>Genre:</label>
                 <br />
                 <input
@@ -57,8 +65,12 @@ const AddMovieForm = () => {
                     value={formData.genre}
                     onChange={handleChange}
                 />
+
                 <br />
                 <br />
             </form>
-        </div>)
-}
+        </div>
+    );
+};
+
+export default AddMovieForm;
