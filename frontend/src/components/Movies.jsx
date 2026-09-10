@@ -1,7 +1,7 @@
 import useFetch from "../useFetch";
 
 const Movies = () => {
-    const { data, loading, error } = useFetch("http://localhost:3000/movies")
+    const { data, loading, error } = useFetch("https://movies-backend-xi.vercel.app/movies")
     
     console.log(data);
 
