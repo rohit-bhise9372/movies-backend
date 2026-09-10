@@ -4,8 +4,9 @@ A RESTful backend API built with **Node.js, Express.js, MongoDB Atlas, and Mongo
 
 ## 🚀 Live API
 
-**Frontend URL:** `https://movies-frontend-xi-kappa.vercel.app/`
-**Backend URL:**  `https://movies-backend-xi.vercel.app/movies`
+**Frontend URL:** https://movies-frontend-xi-kappa.vercel.app
+
+**Backend URL:**  https://movies-backend-xi.vercel.app/movies
 
 ---
 
