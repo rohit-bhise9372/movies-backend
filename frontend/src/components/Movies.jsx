@@ -5,16 +5,17 @@ const Movies = () => {
     
     console.log(data);
 
-    return (
-        <div>
-            <ul>
-                {data?.map((movie) => (
-                    <li>{movie.title}</li>
-               
-                ))}
-            </ul>
-        </div>
-    );
+return (
+  <div>
+    {loading && <p>Loading...</p>}
+    {data?.error && <p>{data?.error}</p>}
+    <ul>
+      {data?.map((movie) => (
+        <li key={movie._id}>{movie.title}</li>
+      ))}
+    </ul>
+  </div>
+);
 };
 
 export default Movies;
