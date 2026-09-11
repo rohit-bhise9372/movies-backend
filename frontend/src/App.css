@@ -182,3 +182,44 @@
     border-right-color: var(--border);
   }
 }
+/* ---------- Add Movie Form ---------- */
+
+form {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px; 
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: -8px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #111827;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+
+  &:hover {
+    background: #374151;
+  }
+}
+
+h2 {
+  margin-bottom: 20px;
+}
