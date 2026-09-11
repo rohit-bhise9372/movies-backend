@@ -58,13 +58,13 @@ app.get("/movies", async (req, res) => {
     if (movies.length !== 0) {
       res.json(movies);
     } else {
-      res.status(404).json({
-        error: "No movies found.",
-      });
+      res.status(404).json({ error: "No movies found." });
     }
   } catch (error) {
+    console.error(error); // 👈 add this
+
     res.status(500).json({
-      error: "Failed to fetch movies.",
+      error: error.message, // 👈 change this
     });
   }
 });
