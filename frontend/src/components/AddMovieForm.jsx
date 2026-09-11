@@ -29,11 +29,37 @@ const AddMovieForm = () => {
     }));
   };
 
+
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+    try {
+      const response = await fetch("https://movies-backend-xi.vercel.app/movies",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(formData)
+        }
+      );
+
+
+      if (!response.ok) {
+        throw "Failed to add movie."
+      } 
+
+      const data = await response.json()
+
+      console.log("Added Movie", data)
+    } catch (error) {
+      console.log(error)
+    }
+  }
   return (
     <div>
       <h2>Add New Movie</h2>
 
-      <form>
+      <form onSubmit={handleSubmit}>
         <label>Title:</label>
         <br />
         <input
