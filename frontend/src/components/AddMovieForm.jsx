@@ -84,14 +84,26 @@ const AddMovieForm = () => {
         <br />
         <br />
 
-        <label>Genre:</label>
-        <br />
-        <input
-          type="text"
-          name="genre"
-          value={formData.genre}
-          onChange={handleChange}
-        />
+ <label>Genre:</label>
+<br />
+<select
+  name="genre"
+  value={formData.genre}
+  onChange={handleChange}
+>
+  <option value="">Select Genre</option>
+  <option value="Action">Action</option>
+  <option value="Drama">Drama</option>
+  <option value="Comedy">Comedy</option>
+  <option value="Romance">Romance</option>
+  <option value="Thriller">Thriller</option>
+  <option value="Fantasy">Fantasy</option>
+  <option value="Sci-Fi">Sci-Fi</option>
+  <option value="Horror">Horror</option>
+  <option value="Sports">Sports</option>
+  <option value="Musical">Musical</option>
+  <option value="Other">Other</option>
+</select>
 
         <br />
         <br />
